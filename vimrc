@@ -26,6 +26,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'L9'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'ctags.vim'
 
 "Bundle 'git://git.wincent.com/command-t.git'
 
@@ -50,7 +51,7 @@ let g:ctrlp_map = '..'
 "	\ 'file': '\v\.(log|jpg|png|jpeg)$'
 "\}
 let g:ctrlp_user_command = 'find %s -type f'
-
+  
 "auto-save
 "let g:auto_save = 1
 
@@ -59,4 +60,6 @@ let g:ctrlp_user_command = 'find %s -type f'
 "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <F5> :NERDTreeToggle<CR>
 
-
+"ctags
+let g:ctags_statusline=1
+let generate_tags=1
