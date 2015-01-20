@@ -27,6 +27,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'L9'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'ctags.vim'
+Bundle 'slimv.vim'
 
 "Bundle 'git://git.wincent.com/command-t.git'
 
@@ -63,3 +64,6 @@ map <F5> :NERDTreeToggle<CR>
 "ctags
 let g:ctags_statusline=1
 let generate_tags=1
+
+"slimv.vim
+let g:slimv_swank_cmd = '!osascript -e "tell application \"Terminal\" to do script \"sbcl --load ~/.vim/slime/start-swank.lisp\""'
